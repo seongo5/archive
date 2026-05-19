@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.71 110.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #1e1e1e;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #d94a38;
+      }
+
+      .cls-2 {
+        fill: #1e1e1e;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <rect class="cls-3" x="41.34" y="83.73" width="7.65" height="25.98"/>
+        <path class="cls-3" d="m32.93,93.65h12.99v19.12h-1.46c-6.36,0-11.53-5.17-11.53-11.53v-7.6h0Z" transform="translate(142.64 63.79) rotate(90)"/>
+        <rect class="cls-3" x="61.72" y="83.73" width="7.65" height="25.98" transform="translate(131.09 193.44) rotate(-180)"/>
+        <path class="cls-3" d="m76.31,93.65h1.46v19.12h-12.99v-7.6c0-6.36,5.17-11.53,11.53-11.53Z" transform="translate(174.5 31.93) rotate(90)"/>
+      </g>
+      <rect class="cls-3" x="15.87" y="9.66" width="78.97" height="78.97" rx="39.48" ry="39.48"/>
+      <g>
+        <ellipse class="cls-2" cx="46.53" cy="54.7" rx="3.28" ry="7.38"/>
+        <ellipse class="cls-2" cx="64.18" cy="54.7" rx="3.28" ry="7.38"/>
+      </g>
+      <g>
+        <g>
+          <path class="cls-3" d="m26.37,65.61c-3.12,3.36-5.03,7.87-5.03,12.81,0,4.95,1.91,9.45,5.03,12.81h7.87c-3.12-3.36-5.03-7.87-5.03-12.81,0-4.95,1.91-9.45,5.03-12.81"/>
+          <circle class="cls-3" cx="30.05" cy="91.24" r="6.71"/>
+        </g>
+        <g>
+          <path class="cls-3" d="m76.48,65.61c3.12,3.36,5.03,7.87,5.03,12.81,0,4.95-1.91,9.45-5.03,12.81h7.87c3.12-3.36,5.03-7.87,5.03-12.81,0-4.95-1.91-9.45-5.03-12.81"/>
+          <circle class="cls-3" cx="80.66" cy="91.24" r="6.71"/>
+        </g>
+      </g>
+      <path class="cls-4" d="m55.36,109.71c-11.07,0-20.07-9-20.07-20.07s9-20.07,20.07-20.07,20.07,9,20.07,20.07-9,20.07-20.07,20.07Z"/>
+      <rect class="cls-1" width="110.71" height="110.71"/>
+    </g>
+  </g>
+</svg>

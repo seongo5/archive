@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.menu {
+  text-align: center;
+}
+
+#movieBoard {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: 50px auto;
+}
+
+#movieBoard {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#movieBoard .card {
+  width: calc((100% - 1rem * 3) / 4);
+}
+#movieBoard .card .img_box {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+#movieBoard .card .img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: 1s;
+}
+#movieBoard .card .img_box p {
+  position: absolute;
+  /* border: 1px solid red; */
+}
+#movieBoard .card .img_box .overview {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  opacity: 0;
+  transition: 1s;
+}
+#movieBoard .card .img_box .avg {
+  width: 30%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  padding: 1rem 0 0.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10rem 10rem 0 0;
+  color: #000;
+  transition: 1s;
+}
+
+#movieBoard .card h2 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin: 0.5rem 0 2rem;
+}
+
+#movieBoard .card .img_box:hover img {
+  transform: scale(1.1);
+  filter: grayscale(1);
+}
+
+#movieBoard .card .img_box:hover .overview {
+  opacity: 1;
+}
+
+#movieBoard .card .img_box:hover .avg {
+  transform: translate(-50%, 0);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* 검색창 */
+.search {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* 더보기 */
+#more {
+  text-align: center;
+  font-size: 4rem;
+  width: 100%;
+  padding: 2rem 0;
+}

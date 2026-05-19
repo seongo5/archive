@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- script -->
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+
+    <!-- 폰트 -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+    />
+  </head>
+  <body>
+    <section id="about">
+      <div class="about_sticky">
+        <!-- 이름 -->
+        <video
+          src="img/about_bg.mp4"
+          alt="about_bg"
+          autoplay
+          loop
+          muted
+        ></video>
+        <div class="name_wrap">
+          <div class="name">
+            <h1 class="full"><span>김</span><span>성</span><span>오</span></h1>
+            <h1 class="simple">
+              <span>ㄱ</span><span>ㅅ</span><span>ㅇ</span>
+            </h1>
+          </div>
+        </div>
+        <!-- 로고 -->
+
+        <div class="shape_wrap">
+          <div class="shape squ">
+            <img src="img/logo_square_R.svg" alt="logo_square_Red" />
+          </div>
+          <div class="shape tri">
+            <img src="img/logo_triangle_R.svg" alt="logo_triangle_Red" />
+          </div>
+          <div class="shape cir">
+            <img src="img/logo_circle_R.svg" alt="logo_circle_Red" />
+          </div>
+        </div>
+        <!-- 설명 -->
+
+        <div class="desc_wrap">
+          <p class="desc d1">
+            이 로고는 제 이름의 자음<br />
+            ㄱ,ㅅ,ㅇ에서 출발합니다.
+          </p>
+          <p class="desc d2">
+            단순한 형태는 <span class="acc">구조</span>가 되고,
+          </p>
+          <p class="desc d3">
+            구조 속에서 <span class="acc">방향</span>이 만들어지며,
+          </p>
+          <p class="desc d4">
+            방향은 더 나은 <span class="acc">소통</span>으로 이어집니다.
+          </p>
+
+          <p class="desc d5">
+            <span class="acc">구조</span>를 정리하고,<br />
+            문제를 파악해 <span class="acc">방향</span>을 제시하고,<br />
+            원활한 협업을 위해 <span class="acc">소통</span>합니다.
+          </p>
+        </div>
+        <div class="scr"><div class="ball"></div></div>
+      </div>
+    </section>
+
+    <!-- /////////////////////
+          프로필
+    /////////////////////// -->
+    <section id="profile">
+      <div class="profile_wrap">
+        <div class="pro pro1">
+          <div class="pic">
+            <div class="pic5"><img src="img/circle_character_1.svg" /></div>
+            <img
+              class="move move1"
+              src="img/logo_triangle_R.svg"
+              alt="logo_triangle_Red"
+            />
+            <img
+              class="move move2"
+              src="img/logo_square_B.svg"
+              alt="logo_square_Black"
+            />
+          </div>
+        </div>
+        <div class="pro pro2">
+          <p class="title">디자인 & 퍼블리싱</p>
+          <p class="name">김성오</p>
+          <p class="sub">
+            <span>구조</span>를 정리하고,<br />
+            문제를 파악해 <span>방향</span>을 제시하고,<br />
+            원활한 협업을 위해 <span>소통</span>합니다.
+          </p>
+        </div>
+        <div class="pro pro3">
+          <ul class="info">
+            <li class="sec school">
+              <div class="sec_wrap">
+                <div class="menu">
+                  <img src="img/logo_square_R.svg" />
+                  <p>E D U C A T I O N</p>
+                </div>
+                <div class="detail">
+                  <p>
+                    2021.02<br />
+                    대학교 시각정보디자인과 졸업
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="sec license">
+              <div class="sec_wrap">
+                <div class="menu">
+                  <img src="img/logo_triangle_R.svg" />
+                  <p>L I C E N S E</p>
+                </div>
+                <div class="detail">
+                  <p>
+                    <span class="date">2026.04</span>
+                    <span class="license_name">GTQ 포토샵 1급</span>
+                  </p>
+                  <p>
+                    <span class="date">2016.02</span>
+                    <span class="license_name">운전면허 2종 보통</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="sec skill">
+              <div class="sec_wrap">
+                <div class="menu">
+                  <img src="img/logo_circle_R.svg" />
+                  <p>S K I L L S</p>
+                </div>
+                <div class="detail">
+                  <ul class="design">
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Figma</li>
+                  </ul>
+                  <ul class="vid">
+                    <li>Premiere Pro</li>
+                    <li>After Effects</li>
+                  </ul>
+                  <ul class="code">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>jQuery</li>
+                    <li>GSAP</li>
+                    <li class="mm">JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img src="img/logo_square_B.svg" class="tran1" />
+    </section>
+
+    <section id="work_container">
+      <!-- /////////////////
+          코딩 
+    //////////////////-->
+
+      <section id="work1" class="work">
+        <div class="work1_wrap">
+          <!-- work 왼쪽 -->
+          <div class="left">
+            <div class="title">
+              <h2>CODING</h2>
+              <!-- 로고 -->
+              <div class="shape_wrap2">
+                <div class="shape squ">
+                  <img src="img/logo_square_R.svg" alt="logo_square_Red" />
+                </div>
+                <div class="shape tri">
+                  <img src="img/logo_triangle_R.svg" alt="logo_triangle_Red" />
+                </div>
+                <div class="shape cir">
+                  <img src="img/logo_circle_R.svg" alt="logo_circle_Red" />
+                </div>
+              </div>
+              <p class="work_txt">
+                웹퍼블리싱과 프론트엔드 개발을 통해<br />
+                구조적이고 안정적인 결과물을 만듭니다.
+              </p>
+            </div>
+            <div class="character_wrap">
+              <ul class="character">
+                <li><img src="img/square_character_1.svg" /></li>
+                <li><img src="img/square_character_2.svg" /></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- work 오른쪽 -->
+          <div class="right">
+            <ul class="cod">
+              <li>
+                <img src="img/p3.jpg" />
+                <div class="txt">
+                  <p>설명설명설명</p>
+                  <a href="#" class="linkbtn">자세히보기</a>
+                </div>
+              </li>
+              <li>
+                <img src="img/p4.jpg" />
+                <div class="txt">
+                  <p>설명설명설명</p>
+                  <a href="#" class="linkbtn">자세히보기</a>
+                </div>
+              </li>
+              <li>
+                <img src="img/p5.jpg" />
+                <div class="txt">
+                  <p>설명설명설명</p>
+                  <a href="#" class="linkbtn">자세히보기</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- /////////////////
+          자바스크립트
+    //////////////////-->
+
+      <section id="work2" class="work">
+        <div class="work2_wrap">
+          <!-- work 왼쪽 -->
+          <div class="left">
+            <div class="title">
+              <h2>JavaScript</h2>
+              <!-- 로고 -->
+              <div class="shape_wrap2">
+                <div class="shape squ">
+                  <img src="img/logo_square_R.svg" alt="logo_square_Red" />
+                </div>
+                <div class="shape tri">
+                  <img src="img/logo_triangle_R.svg" alt="logo_triangle_Red" />
+                </div>
+                <div class="shape cir">
+                  <img src="img/logo_circle_R.svg" alt="logo_circle_Red" />
+                </div>
+              </div>
+              <p class="work_txt">
+                웹퍼블리싱과 프론트엔드 개발을 통해<br />
+                구조적이고 안정적인 결과물을 만듭니다.
+              </p>
+            </div>
+            <div class="character_wrap">
+              <ul class="character">
+                <li><img src="img/triangle_character_1.svg" /></li>
+                <li><img src="img/triangle_character_2.svg" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="slider">
+              <ul class="panel">
+                <li class="num">
+                  <div class="txt_wrap">
+                    <h4 class="title">NUMBER GAME</h4>
+                    <p class="txt">1부터 100까지 숫자를 입력해서 맞추는 게임</p>
+                    <a
+                      href="javaScript/numberGame2/index.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >SHOW</a
+                    >
+                  </div>
+                </li>
+                <li class="weather">
+                  <div class="txt_wrap">
+                    <h4 class="title">WEATHER</h4>
+                    <p class="txt">원하는 지역의 날씨를 검색</p>
+                    <a
+                      href="javaScript/weather/index.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >SHOW</a
+                    >
+                  </div>
+                </li>
+                <li class="movie">
+                  <div class="txt_wrap">
+                    <h4 class="title">MOVIE</h4>
+                    <p class="txt">영화 정보</p>
+                    <a
+                      href="javaScript/movie/index검색더보기추가.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >SHOW</a
+                    >
+                  </div>
+                </li>
+                <li class="todo">
+                  <div class="txt_wrap">
+                    <h4 class="title">TODO List</h4>
+                    <p class="txt">설명설명</p>
+                    <a href="#">SHOW</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navi">
+                <li>
+                  <div class="bar on"></div>
+                </li>
+                <li>
+                  <div class="bar"></div>
+                </li>
+                <li>
+                  <div class="bar"></div>
+                </li>
+                <li>
+                  <div class="bar"></div>
+                </li>
+              </ul>
+              <!-- <ul class="arr">
+                <li class="prev">
+                  <img src="img/arr_prev.svg" alt="arr_prev" />
+                </li>
+                <li class="next">
+                  <img src="img/arr_next.svg" alt="arr_prev" />
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+        <!-- tran2 -->
+        <svg
+          class="svg_line_layer"
+          viewBox="0 40 100 37"
+          preserveAspectRatio="none"
+        >
+          <path class="draw_line" d="M 100 0 L 0 100" />
+        </svg>
+      </section>
+    </section>
+
+    <!-- /////////////////
+          디자인
+    //////////////////-->
+
+    <section id="work3" class="work">
+      <div class="work3_wrap">
+        <!-- work 왼쪽 -->
+        <div class="left">
+          <div class="title">
+            <h2>DESIGN</h2>
+            <!-- 로고 -->
+            <div class="shape_wrap2">
+              <div class="shape squ">
+                <img src="img/logo_square_R.svg" alt="logo_square_Red" />
+              </div>
+              <div class="shape tri">
+                <img src="img/logo_triangle_R.svg" alt="logo_triangle_Red" />
+              </div>
+              <div class="shape cir">
+                <img src="img/logo_circle_R.svg" alt="logo_circle_Red" />
+              </div>
+            </div>
+            <p class="work_txt">
+              웹퍼블리싱과 프론트엔드 개발을 통해<br />
+              구조적이고 안정적인 결과물을 만듭니다.
+            </p>
+          </div>
+          <div class="character_wrap">
+            <ul class="character">
+              <li><img src="img/circle_character_1.svg" /></li>
+              <li><img src="img/circle_character_2.svg" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right_wrap">
+            <ul class="des">
+              <li>
+                <img src="img/p6.jpg" />
+                <div class="txt">
+                  <p>1</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li>
+                <img src="img/p6.jpg" />
+                <div class="txt">
+                  <p>2</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li>
+                <img src="img/p6.jpg" />
+                <div class="txt">
+                  <p>3</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li>
+                <img src="img/p6.jpg" />
+                <div class="txt">
+                  <p>4</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="des_btn">
+              <li><img src="" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////////
+          컨텍트
+    //////////////////-->
+
+    <footer id="contact">
+      <div class="contact_wrap">
+        <h2>CONTACT</h2>
+        <div class="footer_ani">
+          <div class="bg_mountain">
+            <img src="img/footer_bg.svg" />
+          </div>
+          <ul class="walking_character">
+            <li class="walking_squ">
+              <img src="img/square_character_walk_1.svg" alt="walking_squ_1" />
+              <img src="img/square_character_walk_2.svg" alt="walking_squ_2" />
+            </li>
+            <li class="walking_tri">
+              <img
+                src="img/triangle_character_walk_1.svg"
+                alt="walking_tri_1"
+              />
+              <img
+                src="img/triangle_character_walk_2.svg"
+                alt="walking_tri_2"
+              />
+            </li>
+            <li class="walking_cir">
+              <img src="img/circle_character_walk_1.svg" alt="walking_cir_1" />
+              <img src="img/circle_character_walk_2.svg" alt="walking_cir_2" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

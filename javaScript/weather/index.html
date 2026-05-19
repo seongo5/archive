@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <h2>오늘의 날씨</h2>
+        <input placeholder="도시이름입력" />
+        <button id="searchBtn">검색</button>
+        <p id="location"></p>
+      </div>
+
+      <ul>
+        <li>
+          <img />
+          <p></p>
+          <div class="temp"></div>
+        </li>
+        <li>
+          <img />
+          <p></p>
+          <div class="temp"></div>
+        </li>
+        <li>
+          <img />
+          <p></p>
+          <div class="temp"></div>
+        </li>
+        <li>
+          <img />
+          <p></p>
+          <div class="temp"></div>
+        </li>
+        <li>
+          <img />
+          <p></p>
+          <div class="temp"></div>
+        </li>
+        <li>
+          <img />
+          <p></p>
+          <div class="temp"></div>
+        </li>
+        <li>
+          <img />
+          <p></p>
+          <div class="temp"></div>
+        </li>
+      </ul>
+      <canvas id="weatherChart"></canvas>
+      <script src="custom.js"></script>
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+1. html요소 가지고 오기
+2. api키 가지고 오기
+3. 현재 위치 기반 날씨 가져오기
+4. 도시 이름으로 검색
+5. render함수에서 화면에 나타나게 하기
+6. 3시간 간격으로 날씨를 가지고 오기(주소값 바꾸기)
+7. 차트 그리기
+
+-->

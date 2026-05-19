@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.71 110.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #1e1e1e;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #d94a38;
+      }
+
+      .cls-2 {
+        fill: #1e1e1e;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-3" x="32.95" y="83.73" width="7.65" height="25.98" transform="translate(73.56 193.44) rotate(-180)"/>
+    <path class="cls-3" d="m47.55,93.65h1.46v19.12h-12.99v-7.6c0-6.36,5.17-11.53,11.53-11.53Z" transform="translate(145.73 60.7) rotate(90)"/>
+    <rect class="cls-3" x="54.19" y="83.73" width="7.65" height="25.98" transform="translate(116.04 193.44) rotate(-180)"/>
+    <path class="cls-3" d="m68.79,93.65h1.46v19.12h-12.99v-7.6c0-6.36,5.17-11.53,11.53-11.53Z" transform="translate(166.97 39.46) rotate(90)"/>
+    <g>
+      <g>
+        <path class="cls-3" d="m72.41,77.09c1.28,4.78,4.28,8.64,8.16,11.08l-7.6,2.03c-3.88-2.45-6.88-6.3-8.16-11.08-1.28-4.78-.59-9.62,1.55-13.68l7.6-2.03c-2.14,4.05-2.83,8.9-1.55,13.68Z"/>
+        <circle class="cls-3" cx="76.53" cy="89.25" r="6.71"/>
+      </g>
+      <rect class="cls-3" x="90.22" y="74.24" width="2.23" height="31.32" transform="translate(181.31 -1.36) rotate(90.05)"/>
+      <polygon class="cls-4" points="95.42 108.95 105.78 91.02 85.08 91.01 95.42 108.95"/>
+    </g>
+    <polygon class="cls-3" points="47.67 12.36 5.19 85.93 90.14 85.93 47.67 12.36"/>
+    <g>
+      <ellipse class="cls-2" cx="52.08" cy="62.35" rx="3.28" ry="7.38"/>
+      <ellipse class="cls-2" cx="63.41" cy="57.82" rx="3.28" ry="7.38"/>
+    </g>
+    <g>
+      <path class="cls-3" d="m29.32,72.61c-2.62,3.77-3.88,8.49-3.19,13.39.69,4.9,3.21,9.09,6.76,11.99l7.79-1.1c-3.56-2.9-6.07-7.09-6.76-11.99-.69-4.9.57-9.62,3.19-13.39"/>
+      <circle class="cls-3" cx="36.54" cy="97.47" r="6.71"/>
+    </g>
+    <rect class="cls-1" width="110.71" height="110.71"/>
+  </g>
+</svg>
