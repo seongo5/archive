@@ -5,6 +5,24 @@
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 // =====================================
+//    about_
+// =====================================
+$(function () {
+  $("#work1 .work1_wrap .right .cod li").on("mouseenter", function () {
+    $(this).find(".preview").animate({ opacity: "0" }, 500);
+    $(this).find(".cod_img").addClass("active");
+  });
+  $("#work1 .work1_wrap .right .cod li").on("mouseleave", function () {
+    $(this).find(".preview").animate({ opacity: "1" }, 500);
+    $(this).find(".cod_img").removeClass("active");
+  });
+});
+
+// =====================================
+//    work1_Coding
+// =====================================
+
+// =====================================
 //    work2_javaScript
 // =====================================
 $(function () {
