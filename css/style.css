@@ -810,14 +810,23 @@ body {
   opacity: 0;
   /* transition-delay: 0.5s; */
   background-color: #d94a38;
-  box-shadow: 1px -1px 5px 0px #fff;
+  /* box-shadow: 1px -1px 5px 0px #fff; */
   padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: 1s ease;
-  /* animation: box 0.5s infinite alternate; */
+  animation: box 0.5s infinite alternate;
 }
+@keyframes box {
+  0% {
+    box-shadow: 1px -1px 1px 1px #d94a38;
+  }
+  100% {
+    box-shadow: 5px -5px 1px 10px #d94a38;
+  }
+}
+
 #work1 .work1_wrap .right .cod li .txt .title {
   font-size: 3rem;
   font-weight: 500;
