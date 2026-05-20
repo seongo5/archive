@@ -1484,7 +1484,12 @@ body {
 }
 #contact .contact_wrap .footer_bottom .logo img {
   width: 300px;
+  transition: 0.5s;
 }
+#contact .contact_wrap .footer_bottom .logo img:hover {
+  transform: scale(1.1);
+}
+
 #contact .contact_wrap .footer_bottom .sns {
   color: #fff;
   padding: 5rem;
