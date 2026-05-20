@@ -415,12 +415,13 @@ $(function () {
     .to({}, { duration: 0.3 })
 
     .to("#work3 .des li", {
-      xPercent: -1200, // li 개수나 너비에 맞춰 조절 (-400은 li 4개 너비만큼 이동)
+      xPercent: -1000, // li 개수나 너비에 맞춰 조절 (-400은 li 4개 너비만큼 이동)
       ease: "none", // 가로 스크롤은 속도가 일정한 'none'이 가장 자연스럽습니다.
-      duration: 3, // 타임라인 내에서 차지할 가상 시간(비중)
+      duration: 5, // 타임라인 내에서 차지할 가상 시간(비중)
     })
 
-    .to({}, { duration: 0.5 });
+    .to({}, { duration: 5 })
+    .to("#work3 .left", { opacity: 0, x: -30 }, "<");
 });
 
 //
@@ -430,7 +431,7 @@ $(function () {
 // =====================================
 
 $(function () {
-  const tl = gsap.timeline({
+  const contact = gsap.timeline({
     scrollTrigger: {
       trigger: "#contact",
       start: "top top", // 시작 위치
@@ -439,6 +440,20 @@ $(function () {
       // markers: true,
     },
   });
+  gsap.set(
+    "#contact, #contact .contact_wrap, #contact .contact_wrap .walking_character, #contact .contact_wrap .bg_mountain",
+    { opacity: 0, y: 50 },
+  );
+  gsap.set("#contact .contact_wrap .cloud ", { opacity: 0, x: 50 });
+
+  contact
+    .to("#contact", { opacity: 1, y: 0 })
+    .to("#contact .contact_wrap", { opacity: 1, y: 0 })
+    .to("#contact .contact_wrap .bg_mountain", { opacity: 1, y: 0 })
+    .to("#contact .contact_wrap .cloud", { opacity: 1, x: 0 })
+    .to("#contact .contact_wrap .walking_character", { opacity: 1, y: 0 })
+
+    .to({}, { duration: 0.5 });
 });
 
 //

@@ -1382,6 +1382,7 @@ body {
   /* border: 1px solid red; */
   position: absolute;
   bottom: 8rem;
+  z-index: 200;
 }
 #contact .contact_wrap .footer_ani .walking_character li {
   position: relative;
