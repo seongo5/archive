@@ -21,8 +21,22 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
     />
+
+    <!-- 스와이퍼 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <!-- 마우스 커서 -->
+    <div class="circle">
+      <div class="eye">
+        <img src="img/logo_eye.svg" alt="마우스커서" />
+        <img src="img/logo_eye.svg" alt="마우스커서" />
+      </div>
+    </div>
+
     <section id="about">
       <div class="about_sticky">
         <!-- 이름 -->
@@ -116,7 +130,7 @@
               <div class="sec_wrap">
                 <div class="menu">
                   <img src="img/logo_square_R.svg" />
-                  <p>E D U C A T I O N</p>
+                  <p>학력</p>
                 </div>
                 <div class="detail">
                   <p>
@@ -130,7 +144,7 @@
               <div class="sec_wrap">
                 <div class="menu">
                   <img src="img/logo_triangle_R.svg" />
-                  <p>L I C E N S E</p>
+                  <p>자격증</p>
                 </div>
                 <div class="detail">
                   <p>
@@ -148,7 +162,7 @@
               <div class="sec_wrap">
                 <div class="menu">
                   <img src="img/logo_circle_R.svg" />
-                  <p>S K I L L S</p>
+                  <p>툴</p>
                 </div>
                 <div class="detail">
                   <ul class="design">
@@ -250,7 +264,12 @@
 
                   <div class="link_wrap">
                     <a href="plan">기획안</a>
-                    <a href="#" class="linkbtn">홈페이지</a>
+                    <a
+                      href="https://seongo5.github.io/cafeOOO/"
+                      class="linkbtn"
+                      target="_blank"
+                      >홈페이지</a
+                    >
                   </div>
                 </div>
               </li>
@@ -289,7 +308,12 @@
 
                   <div class="link_wrap">
                     <a href="plan">기획안</a>
-                    <a href="#" class="linkbtn">홈페이지</a>
+                    <a
+                      href="https://seongo5.github.io/opendogdoor/"
+                      class="linkbtn"
+                      target="_blank"
+                      >홈페이지</a
+                    >
                   </div>
                 </div>
               </li>
@@ -490,41 +514,73 @@
           </div>
         </div>
         <div class="right">
-          <div class="right_wrap">
-            <ul class="des">
-              <li>
-                <img src="img/p6.jpg" />
+          <!--  -->
+          <div class="swiper mySwiper right_wrap">
+            <ul class="swiper-wrapper des">
+              <li class="swiper-slide">
+                <img src="img/p3.jpg" />
                 <div class="txt">
                   <p>1</p>
                   <a href="#">자세히보기</a>
                 </div>
               </li>
-              <li>
-                <img src="img/p6.jpg" />
+              <li class="swiper-slide">
+                <img src="img/p4.jpg" />
                 <div class="txt">
                   <p>2</p>
                   <a href="#">자세히보기</a>
                 </div>
               </li>
-              <li>
-                <img src="img/p6.jpg" />
+              <li class="swiper-slide">
+                <img src="img/p5.jpg" />
                 <div class="txt">
                   <p>3</p>
                   <a href="#">자세히보기</a>
                 </div>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <img src="img/p6.jpg" />
                 <div class="txt">
                   <p>4</p>
                   <a href="#">자세히보기</a>
                 </div>
               </li>
+              <li class="swiper-slide">
+                <img src="img/p8.jpg" />
+                <div class="txt">
+                  <p>5</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/p3.jpg" />
+                <div class="txt">
+                  <p>6</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/p4.jpg" />
+                <div class="txt">
+                  <p>7</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/p5.jpg" />
+                <div class="txt">
+                  <p>8</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
             </ul>
-            <ul class="des_btn">
-              <li><img src="" alt="" /></li>
-            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+          <!--  -->
         </div>
       </div>
     </section>
@@ -535,30 +591,62 @@
 
     <footer id="contact">
       <div class="contact_wrap">
-        <h2>CONTACT</h2>
         <div class="footer_ani">
-          <div class="bg_mountain">
-            <img src="img/footer_bg.svg" />
+          <div class="cloud">
+            <ul>
+              <li><h2>CONTACT</h2></li>
+              <li><h2>CONTACT</h2></li>
+              <li><h2>CONTACT</h2></li>
+              <li><h2>CONTACT</h2></li>
+            </ul>
           </div>
-          <ul class="walking_character">
-            <li class="walking_squ">
-              <img src="img/square_character_walk_1.svg" alt="walking_squ_1" />
-              <img src="img/square_character_walk_2.svg" alt="walking_squ_2" />
-            </li>
-            <li class="walking_tri">
-              <img
-                src="img/triangle_character_walk_1.svg"
-                alt="walking_tri_1"
-              />
-              <img
-                src="img/triangle_character_walk_2.svg"
-                alt="walking_tri_2"
-              />
-            </li>
-            <li class="walking_cir">
-              <img src="img/circle_character_walk_1.svg" alt="walking_cir_1" />
-              <img src="img/circle_character_walk_2.svg" alt="walking_cir_2" />
-            </li>
+          <div class="bg_mountain">
+            <div class="bg_wrap">
+              <img src="img/footer_bg2.svg" />
+              <img src="img/footer_bg2.svg" />
+            </div>
+            <ul class="walking_character">
+              <li class="walking_squ">
+                <img
+                  src="img/square_character_walk_1.svg"
+                  alt="walking_squ_1"
+                />
+                <img
+                  src="img/square_character_walk_2.svg"
+                  alt="walking_squ_2"
+                />
+              </li>
+              <li class="walking_tri">
+                <img
+                  src="img/triangle_character_walk_1.svg"
+                  alt="walking_tri_1"
+                />
+                <img
+                  src="img/triangle_character_walk_2.svg"
+                  alt="walking_tri_2"
+                />
+              </li>
+              <li class="walking_cir">
+                <img
+                  src="img/circle_character_walk_1.svg"
+                  alt="walking_cir_1"
+                />
+                <img
+                  src="img/circle_character_walk_2.svg"
+                  alt="walking_cir_2"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sns">
+          <ul class="phone">
+            <li>휴대전화</li>
+            <li>010 - 0000 - 0000</li>
+          </ul>
+          <ul class="email">
+            <li>e-mail</li>
+            <li><a href="#">so555art@gmail.com</a></li>
           </ul>
         </div>
       </div>

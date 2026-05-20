@@ -1,3 +1,24 @@
+// =====================================
+//    mouse
+// =====================================
+$(function () {
+  let circle = document.querySelector(".circle");
+
+  window.addEventListener("mousemove", (e) => {
+    console.log(e.clientX, e.clientY); // 마우스의 위치 x,y
+    circle.style.left = `${e.clientX}px`;
+    circle.style.top = `${e.clientY}px`;
+  });
+
+  $("a, button, .cod li, .navi li").on("mouseenter", function () {
+    $(".circle").addClass("on");
+  });
+
+  $("a, button, .cod li, .navi li").on("mouseleave", function () {
+    $(".circle").removeClass("on");
+  });
+});
+
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 //                    jQuery
@@ -7,20 +28,38 @@
 // =====================================
 //    about_
 // =====================================
-$(function () {
-  $("#work1 .work1_wrap .right .cod li").on("mouseenter", function () {
-    $(this).find(".preview").animate({ opacity: "0" }, 500);
-    $(this).find(".cod_img").addClass("active");
-  });
-  $("#work1 .work1_wrap .right .cod li").on("mouseleave", function () {
-    $(this).find(".preview").animate({ opacity: "1" }, 500);
-    $(this).find(".cod_img").removeClass("active");
-  });
-});
 
 // =====================================
 //    work1_Coding
 // =====================================
+
+let i = 0;
+$(function () {
+  $("#work1 .work1_wrap .right .cod li").on("click", function () {
+    $("#work1 .work1_wrap .right .cod li").removeClass("on");
+    $(this).eq(i).addClass("on");
+    $("#work1 .work1_wrap .right .cod li").find(".txt").css({ opacity: "0" });
+    $(this).eq(i).find(".txt").animate({ opacity: "1" });
+    $("#work1 .work1_wrap .right .cod li")
+      .find(".preview")
+      .css({ opacity: "1" });
+    $(this).eq(i).find(".preview").animate({ opacity: "0" });
+    $("#work1 .work1_wrap .right .cod li")
+      .find(".cod_img")
+      .removeClass("active");
+    $(this).eq(i).find(".cod_img").addClass("active");
+  });
+  $("#work1 .work1_wrap .right .cod").on("mouseleave", function () {
+    $("#work1 .work1_wrap .right .cod li").removeClass("on");
+    $("#work1 .work1_wrap .right .cod li").find(".txt").css({ opacity: "0" });
+    $("#work1 .work1_wrap .right .cod li")
+      .find(".preview")
+      .css({ opacity: "1" });
+    $("#work1 .work1_wrap .right .cod li")
+      .find(".cod_img")
+      .removeClass("active");
+  });
+});
 
 // =====================================
 //    work2_javaScript
@@ -91,11 +130,7 @@ $(function () {
 // =====================================
 //    work3_Design
 // =====================================
-$(function () {
-  $().on("", function () {
-    $().css;
-  });
-});
+$(function () {});
 //
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -248,7 +283,7 @@ $(function () {
       start: "top top", // 시작 위치
       end: "bottom bottom", // 전체 애니메이션이 끝날 위치 (적절히 조절)
       scrub: 1.5,
-      markers: true,
+      // markers: true,
     },
   });
   gsap.set("#profile .pro1", { opacity: 0, x: -30 });
@@ -281,18 +316,19 @@ $(function () {
       start: "top top", // 시작 위치
       end: "bottom bottom", // 전체 애니메이션이 끝날 위치 (적절히 조절)
       scrub: 1.5,
-      markers: true,
+      // markers: true,
     },
   });
-  gsap.set("#work1_wrap, #work1 .left, #work1 .right ", { opacity: 0, x: -30 });
+  gsap.set("#work1 .left ", { opacity: 0, x: -30 });
+  gsap.set("#work1_wrap,  #work1 .right ", { opacity: 0, y: 30 });
   gsap.set("#work2_wrap, #work2 .left", { opacity: 0, x: -30 });
   gsap.set("#work2 .right", { opacity: 0, x: 200 });
 
   // 코딩 sectionm
   work12
-    .to("#work1_wrap", { opacity: 1, x: 0, duration: 0.1 })
-    .to("#work1 .left", { opacity: 1, x: 0, duration: 1 }, "-=1")
-    .to("#work1 .right", { opacity: 1, x: 0, duration: 1 }, "-=0.5")
+    .to("#work1_wrap", { opacity: 1, y: 0, duration: 0.1 })
+    .to("#work1 .left", { opacity: 1, x: 0, duration: 2 }, "-=1")
+    .to("#work1 .right", { opacity: 1, y: 0, duration: 1, delay: 1 }, "-=0.5")
     .to({}, { duration: 2 }); // 컨텐츠 잠시 머무는 시간
 
   // 코딩 sectionm -> 자바스크립트 section
@@ -313,7 +349,7 @@ $(function () {
 
   work12
     .to("#work2_wrap", { opacity: 1, x: 0, duration: 2 })
-    .to("#work2 .right", { opacity: 1, x: 0, duration: 1 })
+    .to("#work2 .right", { opacity: 1, x: 0, duration: 2 })
     .to({}, { duration: 4 }) // 컨텐츠 잠시 머무는 시간
 
     // ++
@@ -322,7 +358,7 @@ $(function () {
       {
         strokeDashoffset: 0,
         ease: "none",
-        duration: 3,
+        duration: 5,
       },
       "-=3",
     )
@@ -337,10 +373,7 @@ $(function () {
       strokeWidth: 300 /* 화면 전체를 여백 없이 완벽하게 채울 수 있는 거대한 두께 수치 */,
       ease: "power2.inOut" /* 묵직하고 고급스럽게 화면을 채우는 모션 */,
       duration: 3 /* 굵어지며 화면을 가득 채우는 여유 스크롤 시간 */,
-    })
-
-    // 화면이 완벽하게 가려진 이 타이밍에 아래 배치된 #work3 디자인 섹션을 개방합니다.
-    .to({}, { duration: 1 });
+    });
 });
 
 //
@@ -366,18 +399,28 @@ $(function () {
     scrollTrigger: {
       trigger: "#work3",
       start: "top top", // 시작 위치
-      end: "bottom bottom", // 전체 애니메이션이 끝날 위치 (적절히 조절)
+      end: "+=2500", // 전체 애니메이션이 끝날 위치 (적절히 조절)
+      // pin: true,
       scrub: 1.5,
-      markers: true,
+      // markers: true,
     },
   });
-  gsap.set("#work3_wrap, #work3 .left, #work3 .right ", { opacity: 0, x: -30 });
+  gsap.set("#work3_wrap, #work3 .left ", { opacity: 0, x: -30 });
+  gsap.set(" #work3 .right ", { opacity: 0, x: 50 });
 
   work3
     .to("#work3_wrap", { opacity: 1, x: 0 })
-    .to("#work3 .left", { opacity: 1, x: 0 })
-    .to("#work3 .right", { opacity: 1, x: 0 })
-    .to({}, { duration: 3 });
+    .to("#work3 .left", { opacity: 1, x: 0 }, "<")
+    .to("#work3 .right", { opacity: 1, x: 0 }, "-=0.2")
+    .to({}, { duration: 0.3 })
+
+    .to("#work3 .des li", {
+      xPercent: -1200, // li 개수나 너비에 맞춰 조절 (-400은 li 4개 너비만큼 이동)
+      ease: "none", // 가로 스크롤은 속도가 일정한 'none'이 가장 자연스럽습니다.
+      duration: 3, // 타임라인 내에서 차지할 가상 시간(비중)
+    })
+
+    .to({}, { duration: 0.5 });
 });
 
 //
@@ -393,7 +436,7 @@ $(function () {
       start: "top top", // 시작 위치
       end: "bottom bottom", // 전체 애니메이션이 끝날 위치 (적절히 조절)
       scrub: 1.5,
-      markers: true,
+      // markers: true,
     },
   });
 });
