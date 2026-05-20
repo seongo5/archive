@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.89 146.61">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #1e1e1e;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        opacity: .9;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <rect class="cls-3" width="841.89" height="146.61"/>
+      <polyline class="cls-2" points="101.98 146.61 60.96 75.57 19.95 146.61"/>
+      <polyline class="cls-2" points="282.01 146.61 259.13 106.99 236.26 146.61"/>
+      <polyline class="cls-2" points="819.69 146.61 796.81 106.99 773.94 146.61"/>
+      <polyline class="cls-1" points="201.32 146.61 145.47 49.88 89.63 146.61"/>
+      <polyline class="cls-1" points="348.31 146.61 311.47 82.79 274.62 146.61"/>
+      <polyline class="cls-2" points="520.55 146.61 484.82 84.73 449.09 146.61"/>
+      <polyline class="cls-1" points="488 146.61 434.55 54.03 381.1 146.61"/>
+      <polyline class="cls-2" points="560.88 146.61 608.56 64.04 656.23 146.61"/>
+      <polyline class="cls-1" points="626.48 146.61 693.82 29.97 761.16 146.61"/>
+    </g>
+  </g>
+</svg>

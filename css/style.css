@@ -1052,8 +1052,8 @@ body {
 #work2 .work2_wrap .right .slider .navi li {
   background-color: #1e1e1e;
   box-shadow: 0 0 5px 2px #d94a38;
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 2rem;
   overflow: hidden;
   /* cursor: pointer; */
@@ -1390,7 +1390,7 @@ body {
   justify-content: center;
   /* border: 1px solid red; */
   position: absolute;
-  bottom: 8rem;
+  bottom: 6rem;
   z-index: 200;
 }
 #contact .contact_wrap .footer_ani .walking_character li {
@@ -1401,7 +1401,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 150px;
 }
 #contact .contact_wrap .footer_ani .walking_character li img:first-child {
   opacity: 1;
@@ -1474,44 +1474,51 @@ body {
     transform: translate(20px, -2px);
   }
 }
-#contact .contact_wrap .sns {
+#contact .contact_wrap .footer_bottom {
   width: 100%;
   height: 50%;
   background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#contact .contact_wrap .footer_bottom .logo img {
+  width: 300px;
+}
+#contact .contact_wrap .footer_bottom .sns {
   color: #fff;
   padding: 5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: flex-end;
-  justify-content: flex-end;
 }
-#contact .contact_wrap .sns ul {
-  width: 500px;
+#contact .contact_wrap .footer_bottom .sns ul {
+  width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
-#contact .contact_wrap .sns ul li {
-  font-size: 2rem;
+#contact .contact_wrap .footer_bottom .sns ul li {
+  font-size: 1.5rem;
   color: #fff;
+  font-weight: 100;
 }
-#contact .contact_wrap .sns ul.email a {
+#contact .contact_wrap .footer_bottom .sns ul.email a {
   transition: 0.5s;
 }
-#contact .contact_wrap .sns ul li:first-child {
-  font-size: 2.2rem;
-  font-weight: 700;
+#contact .contact_wrap .footer_bottom .sns ul li:first-child {
+  font-size: 1.7rem;
+  font-weight: 300;
 }
-#contact .contact_wrap .sns ul.email:hover a {
+#contact .contact_wrap .footer_bottom .sns ul.email:hover a {
   color: #d94a38;
 }
 
 /* 마우스 커서 */
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50px;
   background-color: #fff;
   border: 2px solid #1e1e1e;
@@ -1526,8 +1533,8 @@ body {
 }
 
 .circle.on {
-  width: 50px; /* 크기 키우기 */
-  height: 50px;
+  width: 40px; /* 크기 키우기 */
+  height: 40px;
   background-color: #d94a38; /* 내 포트폴리오 포인트 컬러로 변경 */
   transform: translate(-50%, -50%) scale(1.2); /* 살짝 더 키우는 효과 */
 }
@@ -1543,7 +1550,7 @@ body {
 }
 .circle .eye img {
   height: 100%;
-  width: 5px;
+  width: 4px;
 }
 
 @keyframes eye {
